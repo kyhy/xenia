@@ -8,6 +8,7 @@ const Contributors = () => (
     <ul>
       <li>Ky Lee</li>
       <li>Chandra Kishore Danduri</li>
+      <li>Krishna</li>
     </ul>
   </div>
 );

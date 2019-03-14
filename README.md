@@ -7,6 +7,10 @@ this is a project run by Code for Dayton!
 1. [Install node](https://nodejs.org/en/)
 1. [Install yarn](https://yarnpkg.com/en/)
 1. [Generate ssh key and add it to github](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+1. [React Devtools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
+###Editor setup recommendation
+1. [Setup snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
 ###Steps to run
 1. Using your terminal, clone this repository

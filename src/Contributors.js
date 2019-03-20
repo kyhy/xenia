@@ -13,11 +13,11 @@ const Contributors = () => (
       Contributors
     </div>
     <ul>
-      <li><Link to='ky'>Ky Lee</Link></li>
-      <li><Link to='kishore'>Chandra Kishore Danduri</Link></li>
-      <li><Link to='krish'>Krishna</Link></li>
-      <li><Link to='bharath'>Bharath</Link></li>
-      <li><Link to='sarah'>Sarah</Link></li>
+      <li><Link to='/contributors/ky'>Ky Lee</Link></li>
+      <li><Link to='/contributors/kishore'>Chandra Kishore Danduri</Link></li>
+      <li><Link to='/contributors/krish'>Krishna</Link></li>
+      <li><Link to='/contributors/bharath'>Bharath</Link></li>
+      <li><Link to='/contributors/sarah'>Sarah</Link></li>
     </ul>
     <div>
       <Route path="/contributors/ky" component={Ky} />

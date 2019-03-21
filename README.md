@@ -11,6 +11,8 @@ this is a project run by Code for Dayton!
 
 ###Editor setup recommendation
 1. [Setup snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
+1. [Prettier](https://prettier.io)
+1. [ESLint](https://eslint.org/)
 
 ###Steps to run
 1. Using your terminal, clone this repository

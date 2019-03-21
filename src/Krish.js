@@ -1,9 +1,5 @@
 import React from 'react';
 
-const Krish = () => (
-    <div>
-        Krish
-    </div>
-);
+const Krish = () => <div>Krish</div>;
 
 export default Krish;

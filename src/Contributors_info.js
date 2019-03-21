@@ -1,8 +1,8 @@
 const Info = {
-    CKD:{
-        name: "Chandra Kishore Danduri",
-        icon: require('./assets/contributor_info/images/Kishore.jpeg'),
-        info: `
+  CKD: {
+    name: "Chandra Kishore Danduri",
+    icon: require("./assets/contributor_info/images/Kishore.jpeg"),
+    info: `
         <ul>
             <li>     
             I am a recent grad from the University of Dayton looking for entry-level opportunities on full stack developer and Java developer positions. I am looking for a challenging role in a reputable organization to utilize my Java and full stack programming skills as well as to enhance my knowledge about new and emerging technologies in software Industry.
@@ -20,14 +20,13 @@ const Info = {
             Frameworks: Spring, WPF, Angular 6, Vue JS, Express JS, Bootstrap CSS.
             </li>
         </ul>`,
-        BasicInfo: {
-            Born: "18-Sep-1994",
-            Nationality: "Indian",
-            Education: "Masters in Computer Science",
-            Occupation: "Full Stack Developer - Code for Dayton"
-        }
+    BasicInfo: {
+      Born: "18-Sep-1994",
+      Nationality: "Indian",
+      Education: "Masters in Computer Science",
+      Occupation: "Full Stack Developer - Code for Dayton"
     }
-    
+  }
 };
 
 export default Info;

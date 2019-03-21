@@ -1,68 +1,75 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Welcome to Xenia!
 
-## Available Scripts
+this is a project run by Code for Dayton!
 
-In the project directory, you can run:
+##Local setup guide
+###Prereq
+1. [Install node](https://nodejs.org/en/)
+1. [Install yarn](https://yarnpkg.com/en/)
+1. [Generate ssh key and add it to github](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+1. [React Devtools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 
-### `npm start`
+###Editor setup recommendation
+1. [Setup snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+###Steps to run
+1. Using your terminal, clone this repository
+```
+git clone git@github.com:kyhy/xenia.git
+```
+1. Navigate to `xenia` repository. For example:
+```
+cd ~/code/xenia
+```
+1. Install all dependencies
+```
+yarn install
+```
+1. Start the react application (project should automatically open on your default browser)
+```
+yarn start
+```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Gitsetup
+#### Use VS Code as your git editor
+* For windows, follow the instructions in this stackoverflow
+  * https://stackoverflow.com/questions/30024353/how-to-use-visual-studio-code-as-default-editor-for-git
 
-### `npm test`
+#### enable rerere
+```
+git config --global rerere.enabled true
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[article on git rerere](https://hackernoon.com/fix-conflicts-only-once-with-git-rerere-7d116b2cec67)
 
-### `npm run build`
+###Recommended Tools
+* [VS Code](https://code.visualstudio.com/)
+* [fzf: a command line fuzzy finder](https://github.com/junegunn/fzf)
+* [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Useful git commands
+#### Create a branch
+```
+git checkout -b <branch-name>
+```
+#### Delete a branch
+```
+git branch -D <branch-name>
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+#### Push a branch
+```
+git push -u origin <branch-name>
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Update local git and change it to origin/master
+```
+git fetch && git checkout origin
+```
+### What if I have a branch conflict?
+```
+git fetch
+git checkout <target-branch>
+git rebase -i origin/master
+```
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

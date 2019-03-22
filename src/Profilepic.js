@@ -1,18 +1,23 @@
+// @flow
 import React from 'react';
 import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
 
 const StyledImg = styled.img`
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    height: 400px;
-    width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  height: 400px;
+  width: 300px;
 `;
 
-const Profilepic = (props) => (
-    <div>
-        <StyledImg className="icon" src={props.value} alt="icon" />
-    </div>
+const Profilepic = props => (
+  <div>
+    <StyledImg className="icon" src={props.value} alt="icon" />
+  </div>
 );
 
+Profilepic.propTypes = {
+  value: PropTypes.string.isRequired,
+};
 export default Profilepic;

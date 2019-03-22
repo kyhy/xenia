@@ -1,7 +1,9 @@
+import pic from './assets/contributor_info/images/Kishore.jpeg';
+
 const Info = {
   CKD: {
-    name: "Chandra Kishore Danduri",
-    icon: require("./assets/contributor_info/images/Kishore.jpeg"),
+    name: 'Chandra Kishore Danduri',
+    icon: pic,
     info: `
         <ul>
             <li>     
@@ -21,12 +23,12 @@ const Info = {
             </li>
         </ul>`,
     BasicInfo: {
-      Born: "18-Sep-1994",
-      Nationality: "Indian",
-      Education: "Masters in Computer Science",
-      Occupation: "Full Stack Developer - Code for Dayton"
-    }
-  }
+      Born: '18-Sep-1994',
+      Nationality: 'Indian',
+      Education: 'Masters in Computer Science',
+      Occupation: 'Full Stack Developer - Code for Dayton',
+    },
+  },
 };
 
 export default Info;

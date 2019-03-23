@@ -4,7 +4,7 @@ const Info = {
   CKD: {
     name: 'Chandra Kishore Danduri',
     icon: pic,
-    info: `
+    info: () => `
         <ul>
             <li>     
             I am a recent grad from the University of Dayton looking for entry-level opportunities on full stack developer and Java developer positions. I am looking for a challenging role in a reputable organization to utilize my Java and full stack programming skills as well as to enhance my knowledge about new and emerging technologies in software Industry.

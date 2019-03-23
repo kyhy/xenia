@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import ReactHtmlParser from 'react-html-parser';
 import Profilepic from './Profilepic';
-import Info from './Contributors_info';
+import Info from './contributorInfo';
 
 const Right = styled.div`
   float: right;
@@ -42,12 +41,12 @@ const Left = styled.div`
   }
 `;
 
-const html = Info.CKD.info;
+const html = Info.CKD.info();
 const Kishore = () => (
   <div>
     <Left>
       <div className="name">{Info.CKD.name}</div>
-      <div className="info">{ReactHtmlParser(html)}</div>
+      <div className="info">{html}</div>
     </Left>
     <Right>
       <Profilepic value={Info.CKD.icon} />

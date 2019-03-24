@@ -9,7 +9,8 @@ const Perimeter = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-padding: 1rem`;
+  padding: 1rem;
+`;
 
 export default function Nav() {
   return (

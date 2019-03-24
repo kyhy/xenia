@@ -6,7 +6,7 @@ import Info from './contributorInfo';
 const Right = styled.div`
   float: right;
   margin: auto;
-  heght: 100%;
+  height: 100%;
   padding: 10px;
   border: solid 3px green;
   text-align: center;

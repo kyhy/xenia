@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Contributors from './Contributors';
-import Nav from './Nav';
-import Home from './Home';
+import Contributors from './scenes/Contributors';
+import Nav from './components/Nav';
+import Home from './scenes/Home';
 
 /*
 routes:

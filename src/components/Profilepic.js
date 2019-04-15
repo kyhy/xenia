@@ -7,7 +7,7 @@ const StyledImg = styled.img`
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  height: 400px;
+  height: 300px;
   width: 300px;
 `;
 

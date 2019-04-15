@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable dot-notation */
 import React from 'react';
 import styled from '@emotion/styled';
 import Profilepic from './Profilepic';
@@ -41,15 +43,14 @@ const Left = styled.div`
   }
 `;
 
-const html = Info.CKD.info();
-const Kishore = () => (
+const ContributorSkel = props => (
   <div>
     <Left>
-      <div className="name">{Info.CKD.name}</div>
-      <div className="info">{html}</div>
+      <div className="name">{Info[props.value].name}</div>
+      <div className="info">{Info[props.value].info()}</div>
     </Left>
     <Right>
-      <Profilepic value={Info.CKD.icon} />
+      <Profilepic value={Info[props.value].icon} />
       <h2>Basic Info</h2>
       <table>
         <th>
@@ -59,14 +60,14 @@ const Kishore = () => (
           <tr>Occupation</tr>
         </th>
         <td>
-          <tr>{Info.CKD.BasicInfo.Born}</tr>
-          <tr>{Info.CKD.BasicInfo.Nationality}</tr>
-          <tr>{Info.CKD.BasicInfo.Education}</tr>
-          <tr>{Info.CKD.BasicInfo.Occupation}</tr>
+          <tr>{Info[props.value].BasicInfo.Born}</tr>
+          <tr>{Info[props.value].BasicInfo.Nationality}</tr>
+          <tr>{Info[props.value].BasicInfo.Education}</tr>
+          <tr>{Info[props.value].BasicInfo.Occupation}</tr>
         </td>
       </table>
     </Right>
   </div>
 );
 
-export default Kishore;
+export default ContributorSkel;

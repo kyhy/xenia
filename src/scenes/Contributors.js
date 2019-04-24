@@ -7,12 +7,12 @@ import Ky from './contributors/Ky';
 import Bharath from './contributors/Bharath';
 import Sarah from './contributors/Sarah';
 
-const Contributors = () => (
+const Contributors = props => (
   <div>
     <div>Contributors</div>
-    <ImageStrip />
+    <ImageStrip match={props.match} />
     <div>
-      <Route path="/contributors/ky" render={() => <Ky val="Ky" />} />
+      <Route path="/contributors/ky" render={() => <Ky />} />
       <Route
         path="/contributors/kishore"
         render={() => <Kishore val="CKD" />}

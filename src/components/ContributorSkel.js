@@ -3,7 +3,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Profilepic from './Profilepic';
-import Info from './contributorInfo';
+import contributorInfo from './contributorInfo';
 
 const Right = styled.div`
   float: right;
@@ -46,11 +46,11 @@ const Left = styled.div`
 const ContributorSkel = props => (
   <div>
     <Left>
-      <div className="name">{Info[props.value].name}</div>
-      <div className="info">{Info[props.value].info()}</div>
+      <div className="name">{contributorInfo[props.value].name}</div>
+      <div className="info">{contributorInfo[props.value].info()}</div>
     </Left>
     <Right>
-      <Profilepic value={Info[props.value].icon} />
+      <Profilepic value={contributorInfo[props.value].icon} />
       <h2>Basic Info</h2>
       <table>
         <th>
@@ -60,10 +60,10 @@ const ContributorSkel = props => (
           <tr>Occupation</tr>
         </th>
         <td>
-          <tr>{Info[props.value].BasicInfo.Born}</tr>
-          <tr>{Info[props.value].BasicInfo.Nationality}</tr>
-          <tr>{Info[props.value].BasicInfo.Education}</tr>
-          <tr>{Info[props.value].BasicInfo.Occupation}</tr>
+          <tr>{contributorInfo[props.value].BasicInfo.Born}</tr>
+          <tr>{contributorInfo[props.value].BasicInfo.Nationality}</tr>
+          <tr>{contributorInfo[props.value].BasicInfo.Education}</tr>
+          <tr>{contributorInfo[props.value].BasicInfo.Occupation}</tr>
         </td>
       </table>
     </Right>

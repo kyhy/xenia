@@ -11,13 +11,13 @@ const StyledImg = styled.img`
   width: 300px;
 `;
 
-const Profilepic = props => (
+const ProfilePic = props => (
   <div>
     <StyledImg className="icon" src={props.value} alt="icon" />
   </div>
 );
 
-Profilepic.propTypes = {
+ProfilePic.propTypes = {
   value: PropTypes.string.isRequired,
 };
-export default Profilepic;
+export default ProfilePic;

@@ -28,11 +28,11 @@ const StyledLi = styled.li`
   background: #fafafa;
 `;
 
-const ImageStrip = () => (
+const ImageStrip = props => (
   <div>
     <StyledUl>
       <StyledLi>
-        <Link to="ky">
+        <Link to={`${props.match.path}/ky`}>
           <UserImage user="Ky" pic={KyPic} desc="Team Lead" />
         </Link>
       </StyledLi>

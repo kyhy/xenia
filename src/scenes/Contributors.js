@@ -13,16 +13,10 @@ const Contributors = props => (
     <ImageStrip match={props.match} />
     <div>
       <Route path="/contributors/ky" render={() => <Ky />} />
-      <Route
-        path="/contributors/kishore"
-        render={() => <Kishore val="CKD" />}
-      />
-      <Route path="/contributors/krish" render={() => <Krish val="Krish" />} />
-      <Route
-        path="/contributors/bharath"
-        render={() => <Bharath val="Bharath" />}
-      />
-      <Route path="/contributors/sarah" render={() => <Sarah val="Sara" />} />
+      <Route path="/contributors/kishore" render={() => <Kishore />} />
+      <Route path="/contributors/krish" render={() => <Krish />} />
+      <Route path="/contributors/bharath" render={() => <Bharath />} />
+      <Route path="/contributors/sarah" render={() => <Sarah />} />
     </div>
   </div>
 );

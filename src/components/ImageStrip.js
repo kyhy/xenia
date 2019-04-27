@@ -37,22 +37,22 @@ const ImageStrip = props => (
         </Link>
       </StyledLi>
       <StyledLi>
-        <Link to="kishore">
+        <Link to={`${props.match.path}/kishore`}>
           <UserImage user="Kishore" pic={KishorePic} desc="Developer" />
         </Link>
       </StyledLi>
       <StyledLi>
-        <Link to="krish">
+        <Link to={`${props.match.path}/krish`}>
           <UserImage user="Krish" pic={KrishPic} desc="Developer" />
         </Link>
       </StyledLi>
       <StyledLi>
-        <Link to="bharath">
+        <Link to={`${props.match.path}/bharath`}>
           <UserImage user="Bharath" pic={BharathPic} desc="Developer" />
         </Link>
       </StyledLi>
       <StyledLi>
-        <Link to="sarah">
+        <Link to={`${props.match.path}/sarah`}>
           <UserImage user="Sara" pic={SaraPic} desc="Developer" />
         </Link>
       </StyledLi>

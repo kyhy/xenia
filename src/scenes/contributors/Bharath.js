@@ -1,15 +1,24 @@
-/* eslint-disable dot-notation */
 import React from 'react';
-import PropTypes from 'prop-types';
-import ContributorSkel from '../../components/ContributorSkel';
+import pic from '../../assets/contributor_info/images/Bharath.jpg';
+import Contributor from '../../components/Contributor';
 
-const Bharath = props => (
-  <div>
-    <ContributorSkel value={props.val} />
-  </div>
+const { Name, Info, ProfilePic, BasicInfo } = Contributor;
+
+const Bharath = () => (
+  <Contributor>
+    <Name>Bharath Kumar Inguva</Name>
+
+    <Info>Info</Info>
+
+    <ProfilePic value={pic} />
+
+    <BasicInfo
+      born="India"
+      nationality="Indian"
+      education="University of Dayton"
+      occupation="Full Stack Developer"
+    />
+  </Contributor>
 );
 
-Bharath.propTypes = {
-  val: PropTypes.string.isRequired,
-};
 export default Bharath;

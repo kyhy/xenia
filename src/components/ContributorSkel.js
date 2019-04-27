@@ -2,7 +2,7 @@
 /* eslint-disable dot-notation */
 import React from 'react';
 import styled from '@emotion/styled';
-import Profilepic from './Profilepic';
+import Profilepic from './ProfilePic';
 import contributorInfo from './contributorInfo';
 
 const Right = styled.div`

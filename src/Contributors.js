@@ -4,7 +4,7 @@ import Krish from './Krish';
 import Kishore from './Kishore';
 import Ky from './Ky';
 import Bharath from './Bharath';
-import Sarah from './Sarah';
+import Sarah from './Sarah.1';
 
 const Contributors = () => (
   <div>
